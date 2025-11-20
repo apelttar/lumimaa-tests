@@ -1,0 +1,65 @@
+{"level":30,"time":"2025-11-20T18:13:03.474Z","pid":7204,"hostname":"DESKTOP-AGRFSGC","msg":"Listening on 127.0.0.1:55020"}
+{"level":30,"time":"2025-11-20T18:13:03.764Z","pid":7204,"hostname":"DESKTOP-AGRFSGC","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-11-20T18:13:04.001Z","pid":7204,"hostname":"DESKTOP-AGRFSGC","msg":"Adding browser to stack: chromium, version: 141.0.7390.37"}
+{"level":30,"time":"2025-11-20T18:13:04.001Z","pid":7204,"hostname":"DESKTOP-AGRFSGC","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-11-20T18:13:04.001Z","pid":7204,"hostname":"DESKTOP-AGRFSGC","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-11-20T18:13:04.005Z","pid":7204,"hostname":"DESKTOP-AGRFSGC","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-11-20T18:13:04.006Z","pid":7204,"hostname":"DESKTOP-AGRFSGC","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@9fa8fd078307459f0cd335bf4af20e02\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=92e6dcb5-3091-45a3-a574-0e9bdfe50bc7\"}"}
+{"level":30,"time":"2025-11-20T18:13:04.019Z","pid":7204,"hostname":"DESKTOP-AGRFSGC","msg":"Setting default timeout for context context=0edd043e-a0ad-463a-8626-e0213adbb4ac to 10000"}
+{"level":30,"time":"2025-11-20T18:13:04.019Z","pid":7204,"hostname":"DESKTOP-AGRFSGC","msg":"Changed active context: context=0edd043e-a0ad-463a-8626-e0213adbb4ac"}
+{"level":30,"time":"2025-11-20T18:13:04.206Z","pid":7204,"hostname":"DESKTOP-AGRFSGC","msg":"Video path: undefined"}
+{"level":30,"time":"2025-11-20T18:13:04.206Z","pid":7204,"hostname":"DESKTOP-AGRFSGC","msg":"Changed active page"}
+{"level":30,"time":"2025-11-20T18:13:05.109Z","pid":7204,"hostname":"DESKTOP-AGRFSGC","msg":"End of node method newPage"}
+{"level":30,"time":"2025-11-20T18:13:05.113Z","pid":7204,"hostname":"DESKTOP-AGRFSGC","msg":"Start of node method click"}
+{"level":30,"time":"2025-11-20T18:13:05.113Z","pid":7204,"hostname":"DESKTOP-AGRFSGC","msg":"Strict mode is enabled, find Locator with role=link[name=\"Yhteystiedot\"] in page."}
+{"level":30,"time":"2025-11-20T18:13:05.243Z","pid":7204,"hostname":"DESKTOP-AGRFSGC","msg":"End of node method click"}
+{"level":30,"time":"2025-11-20T18:13:05.248Z","pid":7204,"hostname":"DESKTOP-AGRFSGC","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-11-20T18:13:05.248Z","pid":7204,"hostname":"DESKTOP-AGRFSGC","msg":"Strict mode is enabled, find Locator with css=button[data-hook=\"consent-banner-apply-button\"] in page."}
+{"level":30,"time":"2025-11-20T18:13:06.256Z","pid":7204,"hostname":"DESKTOP-AGRFSGC","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-11-20T18:13:06.263Z","pid":7204,"hostname":"DESKTOP-AGRFSGC","msg":"Start of node method click"}
+{"level":30,"time":"2025-11-20T18:13:06.263Z","pid":7204,"hostname":"DESKTOP-AGRFSGC","msg":"Strict mode is enabled, find Locator with css=button[data-hook=\"consent-banner-apply-button\"] in page."}
+{"level":30,"time":"2025-11-20T18:13:07.741Z","pid":7204,"hostname":"DESKTOP-AGRFSGC","msg":"End of node method click"}
+{"level":30,"time":"2025-11-20T18:13:07.747Z","pid":7204,"hostname":"DESKTOP-AGRFSGC","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-11-20T18:13:07.747Z","pid":7204,"hostname":"DESKTOP-AGRFSGC","msg":"Strict mode is enabled, find Locator with css=input[aria-label=\"Nimi\"] in page."}
+{"level":30,"time":"2025-11-20T18:13:07.779Z","pid":7204,"hostname":"DESKTOP-AGRFSGC","msg":"End of node method fillText"}
+{"level":30,"time":"2025-11-20T18:13:07.783Z","pid":7204,"hostname":"DESKTOP-AGRFSGC","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-11-20T18:13:07.783Z","pid":7204,"hostname":"DESKTOP-AGRFSGC","msg":"Strict mode is enabled, find Locator with css=input[aria-label=\"Sähköpostiosoite\"] in page."}
+{"level":30,"time":"2025-11-20T18:13:07.804Z","pid":7204,"hostname":"DESKTOP-AGRFSGC","msg":"End of node method fillText"}
+{"level":30,"time":"2025-11-20T18:13:07.806Z","pid":7204,"hostname":"DESKTOP-AGRFSGC","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-11-20T18:13:07.806Z","pid":7204,"hostname":"DESKTOP-AGRFSGC","msg":"Strict mode is enabled, find Locator with css=input[aria-label=\"Puhelinnumero. Puhelinnumero\"] in page."}
+{"level":30,"time":"2025-11-20T18:13:07.828Z","pid":7204,"hostname":"DESKTOP-AGRFSGC","msg":"End of node method fillText"}
+{"level":30,"time":"2025-11-20T18:13:07.834Z","pid":7204,"hostname":"DESKTOP-AGRFSGC","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2025-11-20T18:13:07.893Z","pid":7204,"hostname":"DESKTOP-AGRFSGC","msg":"Removed page=516c7905-e460-4b57-9adb-529682281d23 from context=0edd043e-a0ad-463a-8626-e0213adbb4ac page stack"}
+{"level":30,"time":"2025-11-20T18:13:08.125Z","pid":7204,"hostname":"DESKTOP-AGRFSGC","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\users\anne\robot_projekti\venv\Lib\site-packages\Browser\wrapper\index.js:12672:15)
+    at PlaywrightServer.getActiveBrowser (C:\users\anne\robot_projekti\venv\Lib\site-packages\Browser\wrapper\index.js:13622:59)
+    at PlaywrightServer.setTimeout (C:\users\anne\robot_projekti\venv\Lib\site-packages\Browser\wrapper\index.js:13873:57)
+    at Object.onReceiveHalfClose (C:\users\anne\robot_projekti\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\users\anne\robot_projekti\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\users\anne\robot_projekti\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\users\anne\robot_projekti\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+=============================================================
+{"level":30,"time":"2025-11-20T18:13:08.130Z","pid":7204,"hostname":"DESKTOP-AGRFSGC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-11-20T18:13:08.131Z","pid":7204,"hostname":"DESKTOP-AGRFSGC","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\users\anne\robot_projekti\venv\Lib\site-packages\Browser\wrapper\index.js:12672:15)
+    at PlaywrightServer.getActiveBrowser (C:\users\anne\robot_projekti\venv\Lib\site-packages\Browser\wrapper\index.js:13622:59)
+    at PlaywrightServer.setTimeout (C:\users\anne\robot_projekti\venv\Lib\site-packages\Browser\wrapper\index.js:13873:57)
+    at Object.onReceiveHalfClose (C:\users\anne\robot_projekti\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\users\anne\robot_projekti\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\users\anne\robot_projekti\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\users\anne\robot_projekti\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+=============================================================
+{"level":30,"time":"2025-11-20T18:13:08.135Z","pid":7204,"hostname":"DESKTOP-AGRFSGC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-11-20T18:13:08.135Z","pid":7204,"hostname":"DESKTOP-AGRFSGC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-11-20T18:13:08.177Z","pid":7204,"hostname":"DESKTOP-AGRFSGC","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2025-11-20T18:13:08.178Z","pid":7204,"hostname":"DESKTOP-AGRFSGC","msg":"End of node method closeAllBrowsers"}

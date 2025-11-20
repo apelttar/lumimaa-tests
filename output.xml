@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.14.0 on win32)" generated="2025-11-20T20:13:02.378721" rpa="false" schemaversion="5">
+<suite id="s1" name="Webtesti" source="C:\Users\anne\robot_projekti\webtesti.robot">
+<test id="s1-t1" name="Avataan web-sivu ja yhteystiedot" line="5">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-11-20T20:13:02.665472" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\anne\\robot_projekti\\browser\\traces\\temp\\34e82a46-9561-4300-ba1c-5235de4e879f"}</msg>
+<msg time="2025-11-20T20:13:02.689247" level="INFO">Starting Browser process C:\users\anne\robot_projekti\venv\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:55020</msg>
+<msg time="2025-11-20T20:13:04.014574" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\anne\\robot_projekti\\browser\\traces\\temp\\34e82a46-9561-4300-ba1c-5235de4e879f"}</msg>
+<arg>chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-11-20T20:13:02.664723" elapsed="1.350010"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-11-20T20:13:05.122850" level="INFO">Successfully initialized new page object and opened url: https://www.snowland.fi/</msg>
+<msg time="2025-11-20T20:13:05.122924" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>https://www.snowland.fi/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-11-20T20:13:04.015660" elapsed="1.107412"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-11-20T20:13:05.124014" level="INFO">Clicks the element 'role=link[name="Yhteystiedot"]'.</msg>
+<arg>role=link[name="Yhteystiedot"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-11-20T20:13:05.123423" elapsed="0.133089"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-11-20T20:13:06.269622" level="INFO">Waited for Element with selector css=button[data-hook="consent-banner-apply-button"] at state visible</msg>
+<arg>css=button[data-hook="consent-banner-apply-button"]</arg>
+<arg>visible</arg>
+<arg>timeout=5s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-11-20T20:13:05.258790" elapsed="1.011113"/>
+</kw>
+<msg time="2025-11-20T20:13:06.270096" level="INFO">${popup_visible} = True</msg>
+<var>${popup_visible}</var>
+<arg>Wait For Elements State</arg>
+<arg>css=button[data-hook="consent-banner-apply-button"]</arg>
+<arg>visible</arg>
+<arg>timeout=5s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-11-20T20:13:05.258423" elapsed="1.011710"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Click" owner="Browser">
+<msg time="2025-11-20T20:13:06.275072" level="INFO">Clicks the element 'css=button[data-hook="consent-banner-apply-button"]'.</msg>
+<arg>css=button[data-hook="consent-banner-apply-button"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-11-20T20:13:06.274567" elapsed="1.481014"/>
+</kw>
+<arg>${popup_visible}</arg>
+<arg>Click</arg>
+<arg>css=button[data-hook="consent-banner-apply-button"]</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-11-20T20:13:06.274169" elapsed="1.481621"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-11-20T20:13:07.757431" level="INFO">Fills the text 'Testi Käyttäjä' in the given field.</msg>
+<arg>css=input[aria-label="Nimi"]</arg>
+<arg>Testi Käyttäjä</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-11-20T20:13:07.756359" elapsed="0.036297"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-11-20T20:13:07.794092" level="INFO">Fills the text 'testi@testi.fi' in the given field.</msg>
+<arg>css=input[aria-label="Sähköpostiosoite"]</arg>
+<arg>testi@testi.fi</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-11-20T20:13:07.793334" elapsed="0.023974"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-11-20T20:13:07.818099" level="INFO">Fills the text '0504442' in the given field.</msg>
+<arg>css=input[aria-label="Puhelinnumero. Puhelinnumero"]</arg>
+<arg>0504442</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-11-20T20:13:07.817590" elapsed="0.024273"/>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<msg time="2025-11-20T20:13:08.138799" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-11-20T20:13:07.844376" elapsed="0.294561"/>
+</kw>
+<status status="PASS" start="2025-11-20T20:13:02.663674" elapsed="5.475737"/>
+</test>
+<status status="PASS" start="2025-11-20T20:13:02.380426" elapsed="5.764108"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Webtesti" id="s1" pass="1" fail="0" skip="0">Webtesti</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
