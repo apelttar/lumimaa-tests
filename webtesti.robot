@@ -12,9 +12,11 @@ Avataan web-sivu ja yhteystiedot
 
     # Klikataan Hyväksy, jos eväste-kysely näkyy
     Run Keyword If    ${popup_visible}    Click    css=button[data-hook="consent-banner-apply-button"]
-    
+
+    # Täytetään asiakkaan tiedot kolmeen tekstikenttään
     Fill Text    css=input[aria-label="Nimi"]    Testi Käyttäjä
     Fill Text    css=input[aria-label="Sähköpostiosoite"]    testi@testi.fi
     Fill Text    css=input[aria-label="Puhelinnumero. Puhelinnumero"]    0504442
-    
+
+    # Suljetaan selain
     Close Browser
